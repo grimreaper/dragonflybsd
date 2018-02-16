@@ -42,6 +42,7 @@
 #define	_CPU_STDINT_H_
 
 #include <sys/cdefs.h>
+#include <sys/param.h>
 
 /*
  * Basic types upon which most other types are built.
@@ -144,7 +145,5 @@ typedef __int64_t	__rlim_t;
 		  (static_cast<type *> (0)->field))))
 #endif
 #endif
-
-#define __arysize(ary)         (sizeof(ary)/sizeof((ary)[0]))
 
 #endif /* _CPU_STDINT_H_ */
